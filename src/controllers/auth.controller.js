@@ -16,7 +16,7 @@ const googleAuthCallbackController = async (req, res) => {
       sameSite: "lax",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
-    res.redirect("https://www.magiwriter.com/dashboard");
+    res.redirect("/dashboard");
   } catch (error) {
     console.log("Error in auth callback controller! more info: ", error);
   }
